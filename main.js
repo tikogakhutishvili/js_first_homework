@@ -25,13 +25,21 @@ switch(month) {
         console.log("Check your spelling :)")
     
 }
-let a = 5
-let b = 23
-let c = 13
+let a = 20
+let b = 20
+let c = 20
 if (a>b && a>c){
     console.log(`max number is a ${a} !`)
 } else if(c>a && c>b){
     console.log(`max number is c ${c} !`)
-} else {
+} else if(b>a && b>c) {
     console.log(`max number is b ${b} !`)
+} else if(a>b && a===c){
+    console.log(`a and c both are max ${a},${c}`)
+} else if(b>a && b === c) {
+    console.log(`b and c both are max ${b},${c} `)
+} else if (a===b && b > c) {
+    console.log(`a and b both are max ${a},${b}`)
+} else{
+    console.log(`all are equal`)
 }
